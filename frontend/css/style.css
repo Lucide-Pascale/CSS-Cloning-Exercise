@@ -1,61 +1,209 @@
 :root {
-    --primary-color:#191E3B;
-    --secondary-color:#006ED6;
-}
-body{
-    background-color: #F7F7F8;
-    height: 100%;
-    width: 100%;
-}
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-direction: row;
-    background-color: #FFFFFF;
-    padding-left:3%;
-    padding-right: 3%;
-    width:auto;
-    margin-top: 0px;
+  --primary-color: #191E3B;
+  --secondary-color: #006ED6;
 }
 
-header >h1{
-    font-family: "Inter", sans-serif;
-    color:var(--secondary-color);
-    font-weight: normal;
-
-}
-header>h1>span{
-    font-size: small;
-    vertical-align: super;
-}
-.item :hover{
-    color:var(--secondary-color)
+body {
+  background-color: #F7F7F8;
+  height: 100%;
+  width: 100%;
 }
 
-nav li{
-    
-    list-style: none;
-}
-ul{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap:30px;
-    
-}
-
-nav li a{
-    text-decoration: none;
-    font-family:"Poppins", sans-serif;
-    font-weight: 500;
-    color:var(--primary-color);
-    font-size: small;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: auto;
+  margin-top: 0px;
 }
 
+header>h1 {
+  font-family: "Inter", sans-serif;
+  color: var(--secondary-color);
+  font-weight: normal;
 
+}
 
+header>h1>span {
+  font-size: small;
+  vertical-align: super;
+}
 
+.item :hover {
+  color: var(--secondary-color)
+}
+
+nav li {
+
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+}
+
+nav li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-size: small;
+}
+
+nav li a i {
+  color: var(--secondary-color);
+}
+
+ul>button {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  border: 1.4px solid rgba(128, 128, 128, 0.235);
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+ul>button:hover {
+  background-color: #006fd61f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 8%;
+  padding-right: 8%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('heror-cover.avif');
+  position: relative;
+  height: 580px;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* dark semi-transparent overlay */
+  z-index: 1;
+}
+
+main>h1 {
+  font-family: "Chiron Sung HK", serif;
+  color: #FFFFFF;
+  z-index: 2;
+
+}
+
+main>div {
+  z-index: 2;
+}
+
+.itemmain {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F7F8;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 20px;
+  gap: 20px;
+  width: 100%;
+}
+
+.itemmain div {
+  width: 30%;
+}
+
+.itemmain div button {
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 500; */
+  color: var(--primary-color);
+  padding: 10px;
+  /* padding-right: 30px; */
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+}
+
+.itemmain div button i {
+  font-size: large;
+}
+
+.itemmain > button {
+  border-radius: 30px;
+  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  border: none;
+  padding-right: 5px;
+  width: 100px;
+  font-size: 16px;
+  height: 100%;
+}
+
+.itemsub2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+  /* align-content: left;  */
+}
+.itemsub2 p{
+  width: 200px;
+  margin: 0;
+}
+.itemsub0{
+  
+}
+.itemsub0 button{
+  padding: 20px 0;
+  height: 57px;
+}
+
+.itemsub1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 
+.chiron-sung-hk-<uniquifier> {
+  font-family: "Chiron Sung HK", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+/* <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 
 
@@ -72,7 +220,7 @@ nav li a{
   font-weight: <weight>;
   font-style: normal;
 } */
- /* .poppins-thin {
+/* .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
