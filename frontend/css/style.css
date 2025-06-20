@@ -310,6 +310,24 @@ body h4 span{
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 28px;
+  scrollbar-width: none;
+}
+
+.container3{
+   background-image: url('33.jpg');
+   background-size: cover;
+   background-position: center;
+   color:rgba(0, 0, 0, 0.642);
+   min-width: 300px;
+   min-height: 100px;
+   width: 300px;
+   height: 200px;
+   font-size: 30px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+   align-items: center;
 }
 /* 
 .chiron-sung-hk-<uniquifier> {
