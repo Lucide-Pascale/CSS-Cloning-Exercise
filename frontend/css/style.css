@@ -189,6 +189,49 @@ main>div {
   gap: 10px;
 }
 
+.itemsub3{
+  display:flex;
+  flex-direction:row;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  color:#FFFFFF;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  
+}
+
+.itemsub3 > button{
+  background-color: var(--secondary-color);
+  color:#FFFFFF;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  height: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.itemsub4{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  color:#FFFFFF;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
 /* 
 .chiron-sung-hk-<uniquifier> {
   font-family: "Chiron Sung HK", serif;
