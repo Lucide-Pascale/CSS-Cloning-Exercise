@@ -262,7 +262,7 @@ main>div {
   margin-right: 30px;
 }
 
-body h2{
+body >h2{
   font-family: "Poppins", sans-serif;
   font-size:25px;
   color:var(--primary-color);
@@ -271,7 +271,7 @@ body h2{
   margin-bottom: 0px;
 }
 
-body h4{
+body >h4{
   font-family: "Poppins", sans-serif;
   font-size: small;
   margin-left: 30px;
@@ -328,6 +328,95 @@ body h4 span{
    flex-direction:row;
    justify-content: space-between;
    align-items: center;
+   padding-left: 5px;
+   padding-right: 5px;
+}
+.container4{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 4px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color:var(--primary-color);
+  font-size:small;
+  margin:0px 0px;
+  margin-bottom: 0px;
+
+}
+
+.container4 >button{
+  background-color: #227950;
+  border: none;
+  border-radius: 2px;
+  height:fit-content;
+  padding: 3px 5px ;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-weight:bold;
+  font-size:small;
+
+}
+
+.container5{
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+  max-width: 299px;
+  margin:0px 0px;
+  margin-top: 0px;
+  
+  padding-top: 0%;
+}
+.container5 h3{
+  font-size:15px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.container5 h4{
+  font-size: small;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.container5 h5{
+  margin-top: 0px;
+  font-size: x-small;
+  font-weight:300;
+}
+.container6{
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+  max-width: 299px;
+  margin:0px 0px;
+  margin-top: 0px;
+  
+  padding-top: 0px;
+}
+.container6 h3{
+  font-size:15px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+.container6 h5{
+  margin-top: 0px;
+  font-size: x-small;
+  font-weight:300;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.overall{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: left; */
+  /* gap:2px; */
+  
+  max-width: 310px;
+  justify-content: space-between;
+  gap:0px;
+  max-height:400px;
+  
 }
 /* 
 .chiron-sung-hk-<uniquifier> {
